@@ -214,6 +214,10 @@
               <a href="" class="service-list__link">
                 <img
                   class="service-list__img"
+                  srcset="
+                  ./images/action1.jpg   1x,
+                  ./images/service-1-2x.jpg 2x
+                "
                   src="./images/action1.jpg"
                   alt="человек печатает
                         текст"
@@ -227,6 +231,10 @@
               <a href="" class="service-list__link">
                 <img
                   class="service-list__img"
+                  srcset="
+                  ./images/action2.jpg   1x,
+                  ./images/service-2-2x.jpg 2x
+                "
                   src="./images/action2.jpg"
                   alt="человек печатает на телефоне"
                   width="370"
@@ -239,6 +247,10 @@
               <a href="" class="service-list__link">
                 <img
                   class="service-list__img"
+                  srcset="
+                  ./images/action3.jpg  1x,
+                  ./images/service-3-2x.jpg 2x
+                "
                   src="./images/action3.jpg"
                   alt="человек рисует на планшете"
                   width="370"
@@ -255,12 +267,30 @@
           <h2 class="title">Наша команда</h2>
           <ul class="staff-list marker">
             <li class="staff-item">
-              <img
-                src="./images/person1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/staff/agent-1-1x.jpg 1x, 
+                  ./images/staff/agent-1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/agent-1-tab-1x.jpg    1x,
+                    ./images/staff/agent-1-tab-2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/agent-1-mob-1x.jpg    1x,
+                    ./images/staff/agent-1-mob-2x.jpg  2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/staff/agent-1-mob-1x.jpg "
+                  alt="Игорь Демьяненко"
+                />
               <div class="agent-file">
                 <h3 class="staff-agent">Игорь Демьяненко</h3>
                 <p lang="en" class="staff-position">Product Designer</p>
@@ -301,12 +331,31 @@
               </div>
             </li>
             <li class="staff-item">
-              <img
-                src="./images/person2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/staff/agent-2-1x.jpg 1x,
+                   ./images/staff/agent-2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/agent-2-tab-1x.jpg    1x,
+                    ./images/staff/agent-2-tab-2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/agent-2-mob-1x.jpg    1x,
+                    ./images/staff/agent-2-mob-2x.jpg  2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/staff/agent-2-mob-1x.jpg "
+                  alt="Ольга Репина"
+                />
+              </picture>
               <div class="agent-file">
                 <h3 class="staff-agent">Ольга Репина</h3>
                 <p lang="en" class="staff-position">Frontend Developer</p>
@@ -347,12 +396,29 @@
               </div>
             </li>
             <li class="staff-item">
-              <img
-                src="./images/person3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/staff/agent-3-1x.jpg 1x, ./images/staff/agent-3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/agent-3-tab-1x.jpg    1x,
+                    ./images/staff/agent-3-tab-2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/agent-3-mob-1x.jpg    1x,
+                    ./images/staff/agent-3-mob-2x.jpg  2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/staff/agent-3-mob-1x.jpg "
+                  alt="Николай Тарасов"
+                />
               <div class="agent-file">
                 <h3 class="staff-agent">Николай Тарасов</h3>
                 <p lang="en" class="staff-position">Marketing</p>
@@ -393,12 +459,30 @@
               </div>
             </li>
             <li class="staff-item">
-              <img
-                src="./images/person4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/staff/agent-4-1x.jpg 1x, 
+                  ./images/staff/agent-4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/agent-4-tab-1x.jpg    1x,
+                    ./images/staff/agent-4-tab-2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/agent-4-mob-1x.jpg    1x,
+                    ./images/staff/agent-4-mob-2x.jpg  2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/staff/agent-4-mob-1x.jpg "
+                  alt="Михаил Ермаков"
+                />
               <div class="agent-file">
                 <h3 class="staff-agent">Михаил Ермаков</h3>
                 <p lang="en" class="staff-position">UI Designer</p>
