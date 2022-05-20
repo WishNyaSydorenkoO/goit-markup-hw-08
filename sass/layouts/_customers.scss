@@ -1,0 +1,55 @@
+.customers-list {
+  margin-top: 50px;
+  margin-left: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+}
+.customers-item {
+  margin-bottom: 30px;
+  width: calc(100% / 2 - 30px);
+  &:not(even) {
+    margin-left: 30px;
+  }
+  @include tablet {
+    width: calc(100% / 3 - 30px);
+  }
+  @include desktop {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
+.customers-item .customer-link {
+  border: 1px solid var(--clients-color);
+  color: var(--clients-color);
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 92px;
+  @include desktop {
+    width: 170px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: scale(1.1);
+  }
+}
+
+.customers-icon {
+  fill: currentColor;
+}

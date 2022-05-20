@@ -1,0 +1,64 @@
+.staff {
+  background: var(--staff-section-bg-color);
+}
+
+.staff-list {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: -30px;
+  }
+  @include desktop {
+    margin-top: 50px;
+  }
+}
+
+.staff-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @include tablet {
+    width: calc(100% / 2 - 30px);
+    &:not(even) {
+      margin-left: 30px;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+  @include desktop {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+    width: calc(100% / 4 - 30px);
+    margin-bottom: 0;
+  }
+
+  background: var(--staff-item-bg-color);
+  box-shadow: 0px 1px 3px var(--staff-shadow-1-color),
+    0px 1px 1px var(--staff-shadow-2-color),
+    0px 2px 1px var(--staff-shadow-3-color);
+  border-radius: 0px 0px 4px 4px;
+}
+.agent-file {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.staff-agent {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+}
+.staff-position {
+  font-size: 16px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+  color: var(--staff-position-color);
+
+  margin-top: 10px;
+}
