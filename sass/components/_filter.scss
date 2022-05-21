@@ -35,7 +35,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 400px) {
     max-width: 300px;
   }
   @media screen and (max-width: 767px) {
@@ -44,7 +44,7 @@
 }
 
 .category-item {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 400px) {
     &:nth-child(n + 3) {
       margin-top: 15px;
     }
@@ -52,7 +52,7 @@
       margin-left: 8px;
     }
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 401px) and (max-width: 767px) {
     &:nth-child(n + 4) {
       margin-top: 15px;
     }
