@@ -35,13 +35,16 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  @media screen and (max-width: 479px) {
+    max-width: 300px;
+  }
   @media screen and (max-width: 767px) {
     justify-content: start;
   }
 }
 
 .category-item {
-  @media screen and (max-width: 391px) {
+  @media screen and (max-width: 479px) {
     &:nth-child(n + 3) {
       margin-top: 15px;
     }
@@ -49,7 +52,7 @@
       margin-left: 8px;
     }
   }
-  @media screen and (min-width: 392px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     &:nth-child(n + 4) {
       margin-top: 15px;
     }
