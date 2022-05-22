@@ -33,13 +33,13 @@
 
 .category-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: start;
   @media screen and (max-width: 400px) {
     max-width: 300px;
   }
-  @media screen and (max-width: 767px) {
-    justify-content: start;
+  @include tablet {
+    justify-content: center;
   }
 }
 
@@ -52,7 +52,7 @@
       margin-left: 8px;
     }
   }
-  @media screen and (min-width: 401px) and (max-width: 767px) {
+  @media screen and (min-width: 401px) and (max-width: 767.98px) {
     &:nth-child(n + 4) {
       margin-top: 15px;
     }

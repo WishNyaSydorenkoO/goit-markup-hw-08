@@ -100,7 +100,7 @@
             ></a>
           </li>
           <li class="mob-menu-list__item">
-            <a href="./portfolio.html" class="mob-menu-list__link list"
+            <a href="./portfolio.html" class="mob-menu-list__link currentt"
               >Портфолио
               <div class="link-line"></div
             ></a>
@@ -119,10 +119,10 @@
                 +38 096 111 11 11</a
               >
             </li>
-            <li class="mob-contacts-list__item mail">
+            <li class="mob-contacts-list__item">
               <a
                 href="mailto:info@devstudio.com"
-                class="mob-contacts-list__mail list"
+                class="mob-contacts-list__mail"
               >
                 info@devstudio.com</a
               >
@@ -170,16 +170,33 @@
             <li class="cases-item">
               <a href="" class="case-link list">
                 <div class="img-overlay">
-                  <img
-                    srcset="
-                      ./images/projects/techno.jpg       1x,
-                      ./images/projects/project-1-2x.jpg 2x
-                    "
-                    src="./images/projects/techno.jpg"
-                    alt="сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/techno.jpg       1x,
+                        ./images/projects/project-1-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-1-tab-1x.jpg 1x,
+                        ./images/projects/project-1-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-1-mob-1x.jpg 1x,
+                        ./images/projects/project-1-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/projects/project-1-mob-1x.jpg"
+                      alt="сайт"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -198,16 +215,33 @@
             <li class="cases-item">
               <a href="" class="case-link list">
                 <div class="img-overlay">
-                  <img
-                    srcset="
-                      ./images/projects/poster.jpg       1x,
-                      ./images/projects/project-2-2x.jpg 2x
-                    "
-                    src="./images/projects/poster.jpg"
-                    alt="постер"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/poster.jpg       1x,
+                        ./images/projects/project-2-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-2-tab-1x.jpg 1x,
+                        ./images/projects/project-2-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-2-mob-1x.jpg 1x,
+                        ./images/projects/project-2-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/projects/project-2-mob-1x.jpg"
+                      alt="постер"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -228,16 +262,33 @@
             <li class="cases-item">
               <a href="" class="case-link list"
                 ><div class="img-overlay">
-                  <img
-                    srcset="
-                      ./images/projects/seafood.jpg      1x,
-                      ./images/projects/project-3-2x.jpg 2x
-                    "
-                    src="./images/projects/seafood.jpg"
-                    alt="ресторан"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/seafood.jpg      1x,
+                        ./images/projects/project-3-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-3-tab-1x.jpg 1x,
+                        ./images/projects/project-3-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-3-mob-1x.jpg 1x,
+                        ./images/projects/project-3-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/projects/project-3-mob-1x.jpg"
+                      alt="ресторан"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -256,16 +307,33 @@
             <li class="cases-item">
               <a href="" class="case-link list">
                 <div class="img-overlay">
-                  <img
-                    srcset="
-                      ./images/projects/prime.jpg        1x,
-                      ./images/projects/project-4-2x.jpg 2x
-                    "
-                    src="./images/projects/prime.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/prime.jpg        1x,
+                        ./images/projects/project-4-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-4-tab-1x.jpg 1x,
+                        ./images/projects/project-4-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-4-mob-1x.jpg 1x,
+                        ./images/projects/project-4-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/projects/project-4-mob-1x.jpg"
+                      alt="наушники"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -284,16 +352,33 @@
             <li class="cases-item">
               <a href="" class="case-link list">
                 <div class="img-overlay">
-                  <img
-                    srcset="
-                      ./images/projects/boxes.jpg        1x,
-                      ./images/projects/project-5-2x.jpg 2x
-                    "
-                    src="./images/projects/boxes.jpg"
-                    alt="коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/boxes.jpg        1x,
+                        ./images/projects/project-5-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-5-tab-1x.jpg 1x,
+                        ./images/projects/project-5-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-5-mob-1x.jpg 1x,
+                        ./images/projects/project-5-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/projects/project-5-mob-1x.jpg"
+                      alt="коробки"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -312,16 +397,33 @@
             <li class="cases-item">
               <a href="" class="case-link list">
                 <div class="img-overlay">
-                  <img
-                    srcset="
-                      ./images/projects/inspiration.jpg  1x,
-                      ./images/projects/project-6-2x.jpg 2x
-                    "
-                    src="./images/projects/inspiration.jpg"
-                    alt="монитор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/inspiration.jpg  1x,
+                        ./images/projects/project-6-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-6-tab-1x.jpg 1x,
+                        ./images/projects/project-6-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-6-mob-1x.jpg 1x,
+                        ./images/projects/project-6-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/projects/project-6-mob-1x.jpg"
+                      alt="монитор"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -342,16 +444,33 @@
             <li class="cases-item">
               <a href="" class="case-link list">
                 <div class="img-overlay">
-                  <img
-                    srcset="
-                      ./images/projects/limit.jpg        1x,
-                      ./images/projects/project-7-2x.jpg 2x
-                    "
-                    src="./images/projects/limit.jpg"
-                    alt="журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/limit.jpg        1x,
+                        ./images/projects/project-7-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-7-tab-1x.jpg 1x,
+                        ./images/projects/project-7-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-7-mob-1x.jpg 1x,
+                        ./images/projects/project-7-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/projects/project-7-mob-1x.jpg"
+                      alt="журнал"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -370,16 +489,33 @@
             <li class="cases-item">
               <a href="" class="case-link list">
                 <div class="img-overlay">
-                  <img
-                    srcset="
-                      ./images/projects/lab.jpg          1x,
-                      ./images/projects/project-8-2x.jpg 2x
-                    "
-                    src="./images/projects/lab.jpg"
-                    alt="бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/lab.jpg          1x,
+                        ./images/projects/project-8-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-8-tab-1x.jpg 1x,
+                        ./images/projects/project-8-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-8-mob-1x.jpg 1x,
+                        ./images/projects/project-8-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/projects/project-8-mob-1x.jpg"
+                      alt="бирка"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -398,16 +534,33 @@
             <li class="cases-item">
               <a href="" class="case-link list">
                 <div class="img-overlay">
-                  <img
-                    srcset="
-                      ./images/projects/gb.jpg           1x,
-                      ./images/projects/project-9-2x.jpg 2x
-                    "
-                    src="./images/projects/gb.jpg"
-                    alt="печатает за ноутбуком"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/gb.jpg           1x,
+                        ./images/projects/project-9-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-9-tab-1x.jpg 1x,
+                        ./images/projects/project-9-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project-9-mob-1x.jpg 1x,
+                        ./images/projects/project-9-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/projects/project-9-mob-1x.jpg"
+                      alt="печатает за ноутбуком"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -498,13 +651,13 @@
         </div>
         <form class="footer-form">
           <label class="follow-label" for="follow-mail"
-            ><h3 class="invite-title">Подпишитесь на рассылку</h3></label
+            >Подпишитесь на рассылку</label
           >
           <div class="follow-wrap">
             <input
               class="follow-input"
               name="follow-mail"
-              type="mail"
+              type="email"
               id="follow-mail"
               placeholder="E-mail"
               required

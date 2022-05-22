@@ -24,59 +24,55 @@
   <body>
     <header class="header">
       <div class="container header-line">
-          <a href="./index.html" class="logo list"
-            >Web<span class="h-logo">Studio</span></a
-          >
-          <button type="button" class="mob-menu-open-btn">
-            <svg class="mob-menu-open-icon" width="40px" height="40px">
-              <use
-                href="./images/icons/symbol-defs.svg#icon-mob-menu-open"
-              ></use>
-            </svg>
-          </button>
-          <nav class="navigation">
-            <ul class="menu-list marker">
-              <li class="menu-list__item">
-                <a href="./index.html" class="menu-list__link current list"
-                  >Студия
-                  <div class="link-line"></div
-                ></a>
-              </li>
-              <li class="menu-list__item">
-                <a href="./portfolio.html" class="menu-list__link list"
-                  >Портфолио
-                  <div class="link-line"></div
-                ></a>
-              </li>
-              <li class="menu-list__item">
-                <a href="" class="menu-list__link list"
-                  >Контакты
-                  <div class="link-line"></div
-                ></a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="contacts-list">
-            <li class="contacts-list__item">
-              <a href="mailto:info@devstudio.com" class="contacts-list__mail">
-                <svg class="contacts-list__icon" width="16px" height="12px">
-                  <use
-                    href="./images/icons/symbol-defs.svg#icon-envelope"
-                  ></use>
-                </svg>
-                info@devstudio.com</a
-              >
+        <a href="./index.html" class="logo list"
+          >Web<span class="h-logo">Studio</span></a
+        >
+        <button type="button" class="mob-menu-open-btn">
+          <svg class="mob-menu-open-icon" width="40px" height="40px">
+            <use href="./images/icons/symbol-defs.svg#icon-mob-menu-open"></use>
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class="menu-list marker">
+            <li class="menu-list__item">
+              <a href="./index.html" class="menu-list__link current list"
+                >Студия
+                <div class="link-line"></div
+              ></a>
             </li>
-            <li class="contacts-list__item">
-              <a href="tel:+380961111111" class="contacts-list__tel">
-                <svg class="contacts-list__icon" width="10px" height="16px">
-                  <use
-                    href="./images/icons/symbol-defs.svg#icon-smartphone"
-                  ></use></svg
-                >+38 096 111 11 11</a
-              >
+            <li class="menu-list__item">
+              <a href="./portfolio.html" class="menu-list__link list"
+                >Портфолио
+                <div class="link-line"></div
+              ></a>
+            </li>
+            <li class="menu-list__item">
+              <a href="" class="menu-list__link list"
+                >Контакты
+                <div class="link-line"></div
+              ></a>
             </li>
           </ul>
+        </nav>
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <a href="mailto:info@devstudio.com" class="contacts-list__mail">
+              <svg class="contacts-list__icon" width="16px" height="12px">
+                <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-list__item">
+            <a href="tel:+380961111111" class="contacts-list__tel">
+              <svg class="contacts-list__icon" width="10px" height="16px">
+                <use
+                  href="./images/icons/symbol-defs.svg#icon-smartphone"
+                ></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
       <div class="mob-menu is-hidden">
         <button type="button" class="mob-menu-close-btn">
@@ -88,7 +84,7 @@
         </button>
         <ul class="mob-menu-list">
           <li class="mob-menu-list__item">
-            <a href="./index.html" class="mob-menu-list__link"
+            <a href="./index.html" class="mob-menu-list__link currentt"
               >Студия
               <div class="link-line"></div
             ></a>
@@ -151,7 +147,7 @@
       <section class="hero section">
         <div class="container">
           <h2 class="hero__pre-title visually-hidden">Наши преимущества</h2>
-          <ul class="hero-list marker">
+          <ul class="hero-list">
             <li class="hero-list__item">
               <div class="hero-list__signs">
                 <svg class="hero-list__icons" width="70px" height="70px">
@@ -213,10 +209,7 @@
               <a href="" class="service-list__link">
                 <img
                   class="service-list__img"
-                  srcset="
-                  ./images/action1.jpg   1x,
-                  ./images/service-1-2x.jpg 2x
-                "
+                  srcset="./images/action1.jpg 1x, ./images/service-1-2x.jpg 2x"
                   src="./images/action1.jpg"
                   alt="человек печатает
                         текст"
@@ -230,10 +223,7 @@
               <a href="" class="service-list__link">
                 <img
                   class="service-list__img"
-                  srcset="
-                  ./images/action2.jpg   1x,
-                  ./images/service-2-2x.jpg 2x
-                "
+                  srcset="./images/action2.jpg 1x, ./images/service-2-2x.jpg 2x"
                   src="./images/action2.jpg"
                   alt="человек печатает на телефоне"
                   width="370"
@@ -246,10 +236,7 @@
               <a href="" class="service-list__link">
                 <img
                   class="service-list__img"
-                  srcset="
-                  ./images/action3.jpg  1x,
-                  ./images/service-3-2x.jpg 2x
-                "
+                  srcset="./images/action3.jpg 1x, ./images/service-3-2x.jpg 2x"
                   src="./images/action3.jpg"
                   alt="человек рисует на планшете"
                   width="370"
@@ -268,21 +255,23 @@
             <li class="staff-item">
               <picture>
                 <source
-                  srcset="./images/staff/agent-1-1x.jpg 1x, 
-                  ./images/staff/agent-1-2x.jpg 2x"
+                  srcset="
+                    ./images/staff/agent-1-1x.jpg 1x,
+                    ./images/staff/agent-1-2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/staff/agent-1-tab-1x.jpg    1x,
-                    ./images/staff/agent-1-tab-2x.jpg  2x
+                    ./images/staff/agent-1-tab-1x.jpg 1x,
+                    ./images/staff/agent-1-tab-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/staff/agent-1-mob-1x.jpg    1x,
-                    ./images/staff/agent-1-mob-2x.jpg  2x
+                    ./images/staff/agent-1-mob-1x.jpg 1x,
+                    ./images/staff/agent-1-mob-2x.jpg 2x
                   "
                   media="(min-width: 320px)"
                 />
@@ -290,6 +279,7 @@
                   src="./images/staff/agent-1-mob-1x.jpg "
                   alt="Игорь Демьяненко"
                 />
+              </picture>
               <div class="agent-file">
                 <h3 class="staff-agent">Игорь Демьяненко</h3>
                 <p lang="en" class="staff-position">Product Designer</p>
@@ -332,21 +322,23 @@
             <li class="staff-item">
               <picture>
                 <source
-                  srcset="./images/staff/agent-2-1x.jpg 1x,
-                   ./images/staff/agent-2-2x.jpg 2x"
+                  srcset="
+                    ./images/staff/agent-2-1x.jpg 1x,
+                    ./images/staff/agent-2-2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/staff/agent-2-tab-1x.jpg    1x,
-                    ./images/staff/agent-2-tab-2x.jpg  2x
+                    ./images/staff/agent-2-tab-1x.jpg 1x,
+                    ./images/staff/agent-2-tab-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/staff/agent-2-mob-1x.jpg    1x,
-                    ./images/staff/agent-2-mob-2x.jpg  2x
+                    ./images/staff/agent-2-mob-1x.jpg 1x,
+                    ./images/staff/agent-2-mob-2x.jpg 2x
                   "
                   media="(min-width: 320px)"
                 />
@@ -397,20 +389,23 @@
             <li class="staff-item">
               <picture>
                 <source
-                  srcset="./images/staff/agent-3-1x.jpg 1x, ./images/staff/agent-3-2x.jpg 2x"
+                  srcset="
+                    ./images/staff/agent-3-1x.jpg 1x,
+                    ./images/staff/agent-3-2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/staff/agent-3-tab-1x.jpg    1x,
-                    ./images/staff/agent-3-tab-2x.jpg  2x
+                    ./images/staff/agent-3-tab-1x.jpg 1x,
+                    ./images/staff/agent-3-tab-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/staff/agent-3-mob-1x.jpg    1x,
-                    ./images/staff/agent-3-mob-2x.jpg  2x
+                    ./images/staff/agent-3-mob-1x.jpg 1x,
+                    ./images/staff/agent-3-mob-2x.jpg 2x
                   "
                   media="(min-width: 320px)"
                 />
@@ -418,6 +413,7 @@
                   src="./images/staff/agent-3-mob-1x.jpg "
                   alt="Николай Тарасов"
                 />
+              </picture>
               <div class="agent-file">
                 <h3 class="staff-agent">Николай Тарасов</h3>
                 <p lang="en" class="staff-position">Marketing</p>
@@ -460,21 +456,23 @@
             <li class="staff-item">
               <picture>
                 <source
-                  srcset="./images/staff/agent-4-1x.jpg 1x, 
-                  ./images/staff/agent-4-2x.jpg 2x"
+                  srcset="
+                    ./images/staff/agent-4-1x.jpg 1x,
+                    ./images/staff/agent-4-2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/staff/agent-4-tab-1x.jpg    1x,
-                    ./images/staff/agent-4-tab-2x.jpg  2x
+                    ./images/staff/agent-4-tab-1x.jpg 1x,
+                    ./images/staff/agent-4-tab-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/staff/agent-4-mob-1x.jpg    1x,
-                    ./images/staff/agent-4-mob-2x.jpg  2x
+                    ./images/staff/agent-4-mob-1x.jpg 1x,
+                    ./images/staff/agent-4-mob-2x.jpg 2x
                   "
                   media="(min-width: 320px)"
                 />
@@ -482,6 +480,7 @@
                   src="./images/staff/agent-4-mob-1x.jpg "
                   alt="Михаил Ермаков"
                 />
+              </picture>
               <div class="agent-file">
                 <h3 class="staff-agent">Михаил Ермаков</h3>
                 <p lang="en" class="staff-position">UI Designer</p>
@@ -651,13 +650,13 @@
         </div>
         <form class="footer-form">
           <label class="follow-label" for="follow-mail"
-            ><h3 class="invite-title">Подпишитесь на рассылку</h3></label
+            >Подпишитесь на рассылку</label
           >
           <div class="follow-wrap">
             <input
               class="follow-input"
               name="follow-mail"
-              type="mail"
+              type="email"
               id="follow-mail"
               placeholder="E-mail"
               required
@@ -726,7 +725,7 @@
               <input
                 placeholder=" "
                 class="modal-input"
-                type="mail"
+                type="email"
                 name="user-mail"
                 id="user-mail"
                 maxlength="30"

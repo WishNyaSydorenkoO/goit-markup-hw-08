@@ -1,6 +1,7 @@
 .footer-invite {
-  @media screen and (max-width: 767px) {
-    margin-top: 60px;
+  margin-top: 60px;
+  @include tablet {
+    margin-top: 0;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-right: 74px;
@@ -13,7 +14,8 @@
   }
 }
 
-.invite-title {
+.invite-title,
+.follow-label {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
