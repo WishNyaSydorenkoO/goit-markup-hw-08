@@ -818,29 +818,33 @@ body {
   }
 }
 
-.hero-list__item:not(:last-child) {
-  margin-bottom: 30px;
+.hero-list__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+@media screen and (max-width: 767.99px) {
+  .hero-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199.97px) {
   .hero-list__item {
     width: calc(50% - 30px);
-    max-width: 354px;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
   }
   .hero-list__item:nth-child(even) {
     margin-left: 30px;
   }
-  .hero-list__item:nth-last-child(-n+2) {
-    margin-bottom: 0;
+  .hero-list__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-list__item {
-    max-width: 270px;
-    margin-left: 30px;
     width: calc(25% - 30px);
+  }
+  .hero-list__item:not(:first-child) {
+    margin-left: 30px;
   }
   .hero-list__item:nth-last-child(-n+4) {
     margin-bottom: 0;

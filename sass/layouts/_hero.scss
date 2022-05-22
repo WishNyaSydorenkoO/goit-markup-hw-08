@@ -7,25 +7,48 @@
   }
 }
 .hero-list__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  // &:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
+  // @media screen and (min-width: 768px) and (max-width: 1199.97px) {
+  //   width: calc(100% / 2 - 30px);
+  //   max-width: 354px;
+  //   flex-grow: 1;
+  //   &:nth-child(even) {
+  //     margin-left: 30px;
+  //   }
+  //   &:nth-last-child(-n + 2) {
+  //     margin-bottom: 0;
+  //   }
+  // }
+  // @include desktop {
+  //   max-width: 270px;
+  //   margin-left: 30px;
+  //   &:nth-last-child(-n + 4) {
+  //     margin-bottom: 0;
+  //   }
+  //   width: calc(100% / 4 - 30px);
+  // }
+  flex-grow: 1;
+  @media screen and (max-width: 767.99px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1199.97px) {
     width: calc(100% / 2 - 30px);
-    max-width: 354px;
-    flex-grow: 1;
+
     &:nth-child(even) {
       margin-left: 30px;
     }
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
     }
   }
   @include desktop {
-    max-width: 270px;
-    margin-left: 30px;
-    // &:not(:first-child) {
-    // }
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
     &:nth-last-child(-n + 4) {
       margin-bottom: 0;
     }
